@@ -15,11 +15,13 @@ fi
 apt install --no-install-recommends --assume-yes build-essential curl cmake pkg-config gnupg
 apt install -y libcjson-dev libcurl4-openssl-dev
 apt install -y libglib2.0-dev libgpgme-dev libgnutls28-dev uuid-dev libssh-gcrypt-dev libhiredis-dev libxml2-dev libpcap-dev libnet1-dev libpaho-mqtt-dev
-apt install -y libldap2-dev libradcli-dev libpq-dev postgresql-server-dev-15 libical-dev xsltproc rsync libbsd-dev
+apt install -y libldap2-dev libradcli-dev libpq-dev postgresql-server-dev-17 libical-dev xsltproc rsync libbsd-dev 
+apt install -y libnet1-dev libical-dev libpcap-dev libssh-dev libgpgme-dev libpaho-mqttpp-dev libbsd-dev
 apt install -y --no-install-recommends texlive-latex-extra texlive-fonts-recommended xmlstarlet zip rpm fakeroot dpkg nsis gpgsm wget sshpass openssh-client socat snmp python3 smbclient python3-lxml gnutls-bin xml-twig-tools
-apt install -y libmicrohttpd-dev gcc-mingw-w64 libpopt-dev libunistring-dev heimdal-dev perl-base bison libgcrypt20-dev libksba-dev nmap libjson-glib-dev libsnmp-dev
+apt install -y libmicrohttpd-dev gcc-mingw-w64 libpopt-dev libunistring-dev perl-base bison libgcrypt20-dev libksba-dev nmap libjson-glib-dev libsnmp-dev
 apt install -y python3 python3-pip python3-setuptools python3-packaging python3-wrapt python3-cffi python3-psutil python3-lxml python3-defusedxml python3-paramiko python3-redis python3-gnupg python3-paho-mqtt python3-venv python3-impacket
 apt install -y redis-server mosquitto postgresql
+#removed heimdal-dev from requirements, it was removing libcurl4
 
 # Set environment variables
 
